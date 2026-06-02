@@ -88,7 +88,7 @@ Prepared statements are important because:
 - SonarQube
 - OWASP ZAP
 
-## Interview Talking Points
+## Practical Talking Points
 
 - Injection happens when data crosses into an interpreter as executable logic.
 - Prepared statements are one of the most important controls for SQL injection.

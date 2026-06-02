@@ -20,7 +20,7 @@ Checkmarx can scan application code during build or pull request workflows, help
 
 Checkmarx is often positioned around enterprise SAST and broader AppSec governance. Snyk is often strongest in developer-first SCA, open source dependency risk, container, and IaC workflows. Many organisations use tools together rather than treating them as direct replacements.
 
-## Interview Talking Points
+## Practical Talking Points
 
 - SAST reviews source code or compiled code patterns before runtime.
 - Enterprise AppSec requires both scanning and process integration.

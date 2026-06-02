@@ -90,7 +90,7 @@ Without a reliable inventory, teams lose time answering basic questions during u
 - Veracode SCA
 - Trivy
 
-## Interview Talking Points
+## Practical Talking Points
 
 - SCA focuses on dependency risk, including direct and transitive dependencies.
 - SBOMs improve visibility, but they still need monitoring and ownership.

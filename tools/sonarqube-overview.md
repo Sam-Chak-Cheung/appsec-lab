@@ -21,7 +21,7 @@ Security hotspots are code areas that may require human review. They are not alw
 
 SonarQube is broader across code quality and maintainability. Snyk is more focused on security workflows such as SCA, SAST, container scanning, and IaC scanning. In practice, SonarQube can complement dedicated AppSec tools.
 
-## Interview Talking Points
+## Practical Talking Points
 
 - Code quality and security are related but not identical.
 - Security hotspots should be reviewed in context.

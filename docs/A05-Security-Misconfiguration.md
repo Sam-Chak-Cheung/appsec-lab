@@ -49,7 +49,7 @@ A web application is deployed with debug mode enabled and verbose error messages
 - OWASP ZAP
 - Dependency-Check
 
-## Interview Talking Points
+## Practical Talking Points
 
 - Misconfiguration is often a process and ownership issue as much as a technical issue.
 - Cloud storage exposure should be reviewed through both configuration and data sensitivity.

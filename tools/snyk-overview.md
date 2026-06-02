@@ -16,7 +16,7 @@ It helps identify:
 - vulnerable transitive dependencies
 - CVEs and security advisories
 - recommended upgrade paths
-- dependency risk across application portfolios
+- dependency risk across the application estate
 
 This is especially relevant to OWASP A06 Vulnerable and Outdated Components.
 

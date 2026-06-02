@@ -39,7 +39,7 @@ An application accepts a user-supplied URL to fetch a document preview. Without 
 - OWASP ZAP
 - Dependency-Check
 
-## Interview Talking Points
+## Practical Talking Points
 
 - SSRF is especially important in cloud environments because of metadata service risk.
 - URL validation alone is usually not enough; egress control and allowlisting are important.

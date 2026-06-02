@@ -6,5 +6,6 @@
 - Added DevSecOps pipeline overview
 - Added AppSec roadmap
 - Added tool comparison
-- Added interview notes
+- Added security discussion notes
+- Added practical AppSec, DevSecOps, and AI security artifacts
 - Added GitHub Actions security pipeline example

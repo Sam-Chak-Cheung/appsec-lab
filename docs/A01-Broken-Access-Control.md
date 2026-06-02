@@ -37,7 +37,7 @@ An authenticated user changes an account ID in a URL and can view another user's
 - OWASP ZAP
 - Dependency-Check
 
-## Interview Talking Points
+## Practical Talking Points
 
 - Authentication proves identity; authorization decides what that identity can access.
 - IDOR is usually a server-side authorization design problem, not only an input validation issue.

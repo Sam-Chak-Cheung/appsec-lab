@@ -1,6 +1,6 @@
-# Interview Notes
+# Security Discussion Notes
 
-These notes are short, interview-ready explanations for common AppSec and DevSecOps topics.
+These notes provide concise explanations for common Application Security and DevSecOps topics. They are intended to support security engineering discussions, design reviews, risk workshops, and technical decision making.
 
 ## What is OWASP Top 10?
 
@@ -38,7 +38,7 @@ Log4Shell showed that dependency visibility is critical. Many organisations had 
 
 Application security and cloud security are tightly connected. An application flaw can expose cloud data, misuse identity permissions, reach metadata services, leak secrets, or create risky network paths. Cloud-native AppSec should consider IAM, storage exposure, container security, logging, egress control, secrets management, and CI/CD deployment controls.
 
-## Practical Interview Framing
+## Practical Discussion Framing
 
 - Start with the risk in plain English.
 - Explain the business impact.
