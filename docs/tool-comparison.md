@@ -9,7 +9,7 @@
 | Trivy | Container / IaC / dependency scan | Open-source DevSecOps |
 | CodeQL | Semantic code analysis | GitHub-native SAST |
 
-## Practical Notes
+## Practical Positioning
 
 No single tool covers all application security needs. Effective AppSec programs combine tooling with secure design, code review, threat modelling, developer enablement, prioritisation, and remediation tracking.
 
