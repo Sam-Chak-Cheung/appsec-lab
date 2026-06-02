@@ -2,6 +2,8 @@
 
 DevSecOps is the practice of integrating security into software delivery so teams receive useful feedback early and leaders retain visibility over production risk. The goal is not to add friction for its own sake. The goal is to make security decisions traceable, repeatable, and proportionate to the risk being shipped.
 
+This section focuses on control placement, release evidence, exception handling, and how security automation should support engineering delivery.
+
 ## Practical Pipeline Model
 
 A secure delivery workflow commonly includes:
