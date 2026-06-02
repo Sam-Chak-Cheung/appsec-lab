@@ -35,7 +35,8 @@ The strongest material in this repository is designed to show how application se
 - [DevSecOps reference architecture](devsecops/reference-architecture.md)
 - [RAG threat model](ai-security/rag-threat-model.md)
 - [Case studies](case-studies/README.md)
-- [Security discussion notes](docs/security-discussion-notes.md)
+- [Security engineering briefs](docs/security-engineering-briefs.md)
+- [Control matrix](references/control-matrix.md)
 
 ## Repository Structure
 
@@ -43,11 +44,29 @@ The strongest material in this repository is designed to show how application se
 | --- | --- |
 | [domains](domains/README.md) | Core Application Security knowledge domains |
 | [case-studies](case-studies) | Real-world security incidents explained from a defensive engineering perspective |
-| [tools](tools) | Security tooling notes and practical tool positioning |
+| [tools](tools) | Security tooling briefs and practical tool positioning |
 | [devsecops](devsecops/README.md) | Secure delivery, CI/CD controls, and automation patterns |
 | [cloud-security](cloud-security/README.md) | Cloud application security considerations |
 | [ai-security](ai-security/README.md) | AI application security and governance topics |
 | [references](references/README.md) | Reference model for frameworks, standards, and further expansion |
+
+## Security Delivery Model
+
+```mermaid
+flowchart LR
+    A[Code change] --> B[Pull request]
+    B --> C[SAST and code review]
+    B --> D[SCA and dependency review]
+    B --> E[Secrets scanning]
+    C --> F[Build and package]
+    D --> F
+    E --> F
+    F --> G[Container and IaC scanning]
+    G --> H[Risk-based release decision]
+    H --> I[Deploy]
+    I --> J[Runtime monitoring]
+    J --> K[Remediation and evidence]
+```
 
 ## Key Learning Domains
 
