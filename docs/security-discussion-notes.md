@@ -2,6 +2,8 @@
 
 These notes provide concise explanations for common Application Security and DevSecOps topics. They are intended to support security engineering discussions, design reviews, risk workshops, and technical decision making.
 
+The emphasis is on explaining risk clearly enough for engineering and business stakeholders to make practical control decisions.
+
 ## What is OWASP Top 10?
 
 The OWASP Top 10 is a widely used awareness document that summarises major categories of web application security risk. It is not a full testing methodology, but it gives security and engineering teams a shared language for discussing common issues such as broken access control, injection, security misconfiguration, vulnerable components, and SSRF.
