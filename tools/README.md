@@ -15,7 +15,7 @@ This section positions tools by decision value: what they detect, where they run
 | Container scanning | Review image packages, base images, and dependency risk | Snyk Container, Trivy |
 | IaC scanning | Detect unsafe cloud and platform configuration before deployment | Snyk IaC, Trivy, Checkov |
 
-## Tool Notes
+## Tool Briefs
 
 - [Snyk](snyk-overview.md)
 - [Checkmarx](checkmarx-overview.md)
