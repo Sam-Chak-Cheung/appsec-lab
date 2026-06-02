@@ -2,6 +2,8 @@
 
 These case studies explain real-world security incidents from a defensive Application Security and security engineering perspective. The focus is on what the incident teaches about visibility, ownership, controls, and business impact.
 
+Each study is framed around practical response questions: what failed, who needed to act, which controls mattered, and what evidence would be needed.
+
 ## Featured Studies
 
 | Case Study | Primary Theme | AppSec Lesson |
