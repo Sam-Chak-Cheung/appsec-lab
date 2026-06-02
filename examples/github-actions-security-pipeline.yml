@@ -1,4 +1,4 @@
-name: Security Pipeline Example
+name: Application Security Pipeline
 
 on:
   pull_request:
@@ -12,6 +12,7 @@ permissions:
   contents: read
   security-events: write
   actions: read
+  pull-requests: read
 
 jobs:
   codeql:
@@ -29,17 +30,18 @@ jobs:
       - name: Run CodeQL analysis
         uses: github/codeql-action/analyze@v3
 
-  dependency-scan:
-    name: Dependency scan
+  dependency-review:
+    name: Dependency review
     runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Dependency scan note
-        run: |
-          echo "Add an approved SCA tool here, such as Snyk Open Source or OWASP Dependency-Check."
-          echo "This example intentionally does not include real tokens or secrets."
+      - name: Review dependency changes
+        uses: actions/dependency-review-action@v4
+        with:
+          fail-on-severity: high
 
   secret-scan:
     name: Secret scan
@@ -47,20 +49,34 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Secret scan note
-        run: |
-          echo "Add an approved secret scanning tool here, such as GitHub secret scanning, Gitleaks, or TruffleHog."
-          echo "Do not store real secrets in workflow files."
+      - name: Run Gitleaks
+        uses: gitleaks/gitleaks-action@v2
 
-  container-scan:
-    name: Container scan
+  filesystem-scan:
+    name: Filesystem and IaC scan
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Container scan note
-        run: |
-          echo "Add an approved container scanner here, such as Trivy or Snyk Container."
-          echo "Scan built images before deployment and record remediation ownership."
+      - name: Run Trivy filesystem scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: fs
+          scan-ref: .
+          severity: HIGH,CRITICAL
+          ignore-unfixed: true
+          format: table
+          exit-code: "1"
+
+      - name: Run Trivy IaC scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: config
+          scan-ref: .
+          severity: HIGH,CRITICAL
+          format: table
+          exit-code: "1"
