@@ -2,6 +2,8 @@
 
 AI Application Security focuses on the risks introduced when applications use large language models, prompts, retrieval systems, autonomous actions, enterprise data, and AI-assisted decision making.
 
+This section treats AI features as application systems with data access, authorization, logging, validation, and governance requirements.
+
 The core security question is not only whether the model behaves correctly. It is whether the full application protects data, enforces permissions, validates outputs, limits unsafe actions, and keeps humans accountable for high-impact decisions.
 
 ## Key Risk Areas
