@@ -36,6 +36,19 @@ Cloud controls often reduce the blast radius of application defects. For example
 - Are logs sufficient to investigate authorization failures, unusual data access, and deployment changes?
 - Does CI/CD scan application code, dependencies, containers, and infrastructure templates?
 
+## Sample Cloud Application Review
+
+Scenario: a customer API runs in containers, stores data in managed cloud storage and a database, and deploys through GitHub Actions.
+
+| Review Area | Security Question | Practical Control | Evidence |
+| --- | --- | --- | --- |
+| Identity | Does the workload identity have only the permissions it needs? | scoped role for database and storage access | IAM policy review |
+| Storage | Can sensitive data be accessed publicly or cross-tenant? | private storage, encryption, object-level access review | storage policy and access logs |
+| Secrets | Are credentials stored outside code and pipeline logs? | managed secrets service and rotation process | secret inventory and rotation record |
+| Network | Can the application reach internal services unnecessarily? | egress filtering and private endpoints | network rules and architecture review |
+| Logging | Can security events be investigated after deployment? | central logs for auth, data access, deployments, and denied actions | log retention and alert configuration |
+| CI/CD | Are code, dependencies, containers, and IaC reviewed before release? | SAST, SCA, secrets, container, and IaC checks | pipeline run and approval record |
+
 ## Practical Summary
 
 Cloud Application Security is about securing the full environment where software operates. It connects secure coding with identity, data protection, network design, deployment automation, logging, and runtime visibility. In practice, this means AppSec engineers need to understand both application behaviour and the cloud controls that shape exposure and blast radius.
