@@ -2,6 +2,8 @@
 
 Security tools are most valuable when they are mapped to a clear purpose in the SDLC. A tool should help a team find risk, understand ownership, prioritise remediation, or produce evidence for governance.
 
+This section positions tools by decision value: what they detect, where they run, and how their results should be triaged.
+
 ## Tool Categories
 
 | Category | Purpose | Example Tools |
