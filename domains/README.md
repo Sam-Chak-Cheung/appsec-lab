@@ -2,6 +2,8 @@
 
 This section organises the repository around five domains that reflect modern Application Security work. The domains are intentionally practical: each one connects technical risk to business impact, detection, prevention, and security engineering decisions.
 
+Use this page as the main map for how the knowledge base separates application risk, tooling, delivery, supply chain, and AI security.
+
 ## Domain 1: OWASP Top 10
 
 Purpose: understand common application security risks and how they affect real systems.
