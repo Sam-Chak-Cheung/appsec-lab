@@ -61,7 +61,7 @@ From a business perspective, the difficult part was not only applying a patch. O
 - affected and remediated versions
 - deployment records for patched builds
 - compensating controls for delayed remediation
-- monitoring or detection notes for exposed services
+- monitoring or detection evidence for exposed services
 
 ## Practical Talking Points
 

@@ -62,7 +62,7 @@ This risk affects confidentiality, privacy obligations, customer trust, and inci
 
 - updated authorization policy or service-layer control
 - test cases covering positive and negative access scenarios
-- pull request review notes for authorization-sensitive changes
+- pull request review record for authorization-sensitive changes
 - logs showing denied cross-account access attempts in test
 - release record linking remediation to deployment
 
