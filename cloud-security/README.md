@@ -2,6 +2,8 @@
 
 Cloud Application Security focuses on how application risk changes when software runs on cloud platforms, managed services, containers, serverless functions, identity systems, APIs, and internet-exposed infrastructure.
 
+This section connects application weaknesses to cloud blast radius, identity design, data exposure, network paths, and runtime visibility.
+
 The important shift is that application security and cloud security are tightly connected. A secure codebase can still create serious risk if it is deployed with public storage, excessive IAM permissions, missing logging, weak network controls, or exposed management interfaces.
 
 ## Key Risk Areas
