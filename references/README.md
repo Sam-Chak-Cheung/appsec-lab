@@ -2,6 +2,8 @@
 
 This section is a reference index for expanding the knowledge base with standards, frameworks, and practical security models. It is intentionally concise so the repository remains a working knowledge base rather than a link dump.
 
+The references are included to support practical control mapping, not to replace system-specific security analysis.
+
 ## Reference Areas
 
 | Area | Useful For |
