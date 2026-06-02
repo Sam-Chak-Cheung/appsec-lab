@@ -17,9 +17,13 @@ The references are included to support practical control mapping, not to replace
 | CIS Benchmarks | secure configuration baselines |
 | Cloud provider security guidance | identity, logging, network, and data protection patterns |
 
+## Practical References
+
+- [Control matrix](control-matrix.md)
+
 ## How References Should Be Used
 
-References should support practical security judgement. A useful AppSec note should connect a framework or standard to:
+References should support practical security judgement. A useful AppSec reference should connect a framework or standard to:
 
 - the risk being reduced
 - the affected business process or system
@@ -27,6 +31,6 @@ References should support practical security judgement. A useful AppSec note sho
 - the evidence needed to show the control is working
 - the owner responsible for remediation or acceptance
 
-## Expansion Notes
+## Expansion Plan
 
 Future reference pages can map repository content to OWASP ASVS, NIST SSDF, SLSA, and cloud security patterns. The goal should be practical traceability rather than framework memorisation.
