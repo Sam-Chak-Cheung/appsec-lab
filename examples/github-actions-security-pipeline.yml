@@ -1,0 +1,66 @@
+name: Security Pipeline Example
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  security-events: write
+  actions: read
+
+jobs:
+  codeql:
+    name: CodeQL SAST
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Initialise CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: javascript
+
+      - name: Run CodeQL analysis
+        uses: github/codeql-action/analyze@v3
+
+  dependency-scan:
+    name: Dependency scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Dependency scan note
+        run: |
+          echo "Add an approved SCA tool here, such as Snyk Open Source or OWASP Dependency-Check."
+          echo "This example intentionally does not include real tokens or secrets."
+
+  secret-scan:
+    name: Secret scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Secret scan note
+        run: |
+          echo "Add an approved secret scanning tool here, such as GitHub secret scanning, Gitleaks, or TruffleHog."
+          echo "Do not store real secrets in workflow files."
+
+  container-scan:
+    name: Container scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Container scan note
+        run: |
+          echo "Add an approved container scanner here, such as Trivy or Snyk Container."
+          echo "Scan built images before deployment and record remediation ownership."
