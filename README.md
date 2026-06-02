@@ -6,6 +6,8 @@ Author: Samuel Cheung
 
 This repository is a professional Application Security knowledge base. It captures practical security engineering thinking across modern software delivery, cloud platforms, third-party dependencies, and AI-enabled applications.
 
+It is organised as a working reference for understanding risk, selecting controls, and connecting security decisions to software delivery.
+
 Application Security is the discipline of building, reviewing, deploying, and operating software in a way that protects users, data, business processes, and digital services. It includes secure design, secure coding, threat modelling, security testing, dependency governance, cloud controls, CI/CD automation, and evidence-based risk management.
 
 The focus of this repository is defensive security engineering. It does not provide exploit walkthroughs, weaponized code, or CTF-style material. The emphasis is on how a security engineer helps organisations ship software safely.
